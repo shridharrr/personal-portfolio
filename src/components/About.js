@@ -64,28 +64,44 @@ const TAB_DATA = [
     title: 'Skills',
     id: 'skills',
     content: `
-      Node.js
-      Express
-      PostgreSQL
-      Sequelize
-      JavaScript
-      React
+    Programming Skills: Java
+    Frontend: HTML5, CSS, React JS
+    Database: MySQL (Oracle)
+    Framework: Spring Boot
+    Software: Eclipse
+    Designing Tools: Adobe XD, Figma, Canva
+    Languages: English, Kannada, Hindi
     `,
   },
   {
     title: 'Education',
     id: 'education',
     content: `
-      Fullstack Academy of Code
-      University of California, Santa Cruz
+    B.E - Mechanical Engineering
+    Smt Kamala and Sri Venkappa M. Agadi College of Engineering and Technology
+    2018-2021   6.9 CGPA
+    Diploma - Mechanical Engineering
+    K.L.E polytechnic, Vidya Nagar
+    2018
+    SSLC
+    St Mary's High school, keshwapur
+    2013
+    
     `,
   },
   {
     title: 'Certifications',
     id: 'certifications',
     content: `
-      AWS Cloud Practitioner
-      Google Professional Cloud Developer
+    Participated in 3 days workshop on “Adobe photoshop” organized by Computer science Department of
+    SKSVMACET, Lakshmeshwar (2020)
+    1st prize in “Best out of Waste ” organized by Mechanical Department of SKSVMACET, Lakshmeshwar.
+    (2019)
+    Participated in “project Exhibition” events, organized by Civil and Mechanical engineering Departments
+    of JIT, Davangere, for final year polytechnic • students. (2017)
+    Participated in National level technical project exhibition conducted by KLEvSociety's Chidanand B. Kore
+    Polytechnic, Chikod
+    
     `,
   },
 ];
