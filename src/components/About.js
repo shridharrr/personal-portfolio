@@ -42,7 +42,7 @@ const AboutSection = () => {
         <AboutSectionContainer>
             <Heading>About</Heading>
             <Paragraph>
-                Welcome to my digital space! I'm John Smith, a UI/UX Designer with a deep passion for UI/UX design Industry. As a UI/UX designer, I have cultivated a diverse skill set and a keen eye for UI/UX Design, Product design, and development.
+                Welcome to my digital space! I'm shridhar m katwe, a UI/UX Designer with a deep passion for UI/UX design Industry. As a UI/UX designer, I have cultivated a diverse skill set and a keen eye for UI/UX Design, Product design, and development.<br></br><br></br>
                 I'm always open to new opportunities, collaborations, and conversations. Whether you have a project in mind or just want to connect over a shared interest, feel free to reach out. Let's create something extraordinary together!
             </Paragraph>
         </AboutSectionContainer>
