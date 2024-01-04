@@ -58,7 +58,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm shridhar `}<br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[" Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm shridhar `}<br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[" Web Developer", "Web Designer", "UI/UX Designer"]'><span className="wrap">{text}</span></span></h1>
                   <p>Driven by a year-long tenure in digital marketing, I bring hands-on expertise in WordPress, Wix, and React JS, coupled with adeptness in crafting user-centric designs using Figma and Adobe XD. My background encompasses designing immersive UX/UI websites, creating compelling social mediagraphics, and curating impactful marketing collaterals.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}

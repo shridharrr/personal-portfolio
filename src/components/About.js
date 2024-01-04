@@ -1,5 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import 'animate.css';
+import {motion} from 'framer-motion';
+import styled, { keyframes } from 'styled-components';
 
 const AboutSection = () => {
     const aboutSectionStyles = {
@@ -15,6 +17,7 @@ const AboutSection = () => {
         color: '#ffff',
     };
 
+
     const paragraphStyles = {
         border: '2px solid #df5fdd',
         padding: '60px',
@@ -24,7 +27,11 @@ const AboutSection = () => {
 
     return (
         <div className="about-section" style={aboutSectionStyles}>
-            <h1 style={headingStyles}>About</h1>
+            <motion.div animate={{y: 100 }}>
+                <h1 style={headingStyles}>About</h1>
+            </motion.div>
+                
+                
             <p style={paragraphStyles}>
                 Welcome to my digital space! I'm John Smith, a UI/UX Designer with a deep passion for UI/UX design Industry. As a UI/UX designer, I have cultivated a diverse skill set and a keen eye for UI/UX Design, Product design, and development.
                 I'm always open to new opportunities, collaborations, and conversations. Whether you have a project in mind or just want to connect over a shared interest, feel free to reach out. Let's create something extraordinary together!
