@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/qqqq.png";
 import projImg11 from "../assets/img/project11.png";
 import projImg12 from "../assets/img/Save money.jpg";
+import projImg13 from "../assets/img/project 4.png";
 
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -27,7 +28,7 @@ export const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg13,
     },
     {
       title: "Business Startup",

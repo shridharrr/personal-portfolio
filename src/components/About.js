@@ -26,18 +26,32 @@ const ContentContainer = styled.div`
   justify-content: center;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 767px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+
+  @media (max-width: 767px) {
+    font-size: 2rem;
+  }
 `;
 
 const Description = styled.p`
   font-size: 1.125rem;
   line-height: 1.6;
   margin-bottom: 3rem;
+
+  @media (max-width: 767px) {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 const TabButtonsContainer = styled.div`
@@ -48,6 +62,11 @@ const TabButtonsContainer = styled.div`
   margin-bottom: 1rem;
   position: relative;
   z-index: 2;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const TabButton = styled.button`
@@ -57,6 +76,10 @@ const TabButton = styled.button`
   padding: 0.5rem 2rem;
   margin-right: 1rem;
   cursor: pointer;
+
+  @media (max-width: 767px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const TAB_DATA = [
