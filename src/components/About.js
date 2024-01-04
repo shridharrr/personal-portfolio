@@ -15,6 +15,7 @@ const AboutSectionContainer = styled.div`
 
 const Heading = styled.h1`
     font-size: 65 px;
+    font-weight: 700;
     color: #ffffff;
     @media (min-width: 768px) {
         font-size: 2.5vw;
@@ -23,6 +24,11 @@ const Heading = styled.h1`
 
 const Paragraph = styled.p`
     border: 2px solid #df5fdd;
+    color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 100%;
     padding: 4vw;
     margin: 5vw 0;
     @media (min-width: 768px) {
