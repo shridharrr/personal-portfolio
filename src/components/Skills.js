@@ -2,10 +2,12 @@ import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
+import React, {useEffect} from "react";
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
+import AOS from 'aos';
 
 export const Skills = () => {
   const responsive = {
@@ -28,13 +30,12 @@ export const Skills = () => {
     }
   };
 
-  
+  useEffect(() => {
+    AOS.init({duration:2000});
+  }, []);
 
 
   return (
-
-
-
     
     <section className="skill" id="skills">
         <div className="container">
@@ -52,29 +53,21 @@ export const Skills = () => {
                         <strong>Designing Tools:</strong> Adobe XD, Figma, Canva<br></br>
                         <strong>Languages:</strong> English, Kannada, Hindi
                     </p>
-                
-
-
-
-
-
-
-
 
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Canva</h5>
                             </div>
-                            <div className="item">
+                            <div className="item animation" data-aos = "flip-right">
                                 <img src={meter2} alt="Image" />
                                 <h5>Figma</h5>
                             </div>
-                            <div className="item">
+                            <div className="item animation" data-aos = "flip-right">
                                 <img src={meter3} alt="Image" />
                                 <h5>Adobe XD</h5>
                             </div>
-                            <div className="item">
+                            <div className="item animation" data-aos = "flip-right">
                                 <img src={meter1} alt="Image" />
                                 <h5>Wordpress</h5>
                             </div>

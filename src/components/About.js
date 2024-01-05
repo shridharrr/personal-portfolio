@@ -1,10 +1,13 @@
 import React from 'react';
 import 'animate.css';
+import AOS from 'aos';
 import {motion} from 'framer-motion';
 import { keyframes } from 'styled-components';
 import { useState } from 'react';
 import {styled} from 'styled-components';
 import img1 from "../assets/img/2150898633 (1).png";
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 const AboutSectionContainer = styled.section`
   color: white;
@@ -147,27 +150,14 @@ const AboutSection = () => {
         margin: '50px 0px',
     };
 
-    return (
-        <div className="about-section" >
-            <motion.div animate={{y: 100 }}>
-                <h1 >About</h1>
-            </motion.div>
-                
-                
-            <p style={paragraphStyles}>
-                Welcome to my digital space! I'm John Smith, a UI/UX Designer with a deep passion for UI/UX design Industry. As a UI/UX designer, I have cultivated a diverse skill set and a keen eye for UI/UX Design, Product design, and development.
-                I'm always open to new opportunities, collaborations, and conversations. Whether you have a project in mind or just want to connect over a shared interest, feel free to reach out. Let's create something extraordinary together!
-            </p>
-        </div>
-    );
-
-
   return (
     <AboutSectionContainer id="about">
       <GridContainer className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <ImageContainer>
+      <div>
+        <ImageContainer  data-aos="zoom-out-right">
           <img src={img1} alt="About Me" width={500} height={500} />
         </ImageContainer>
+        </div>
         <ContentContainer>
           <Title>About Me</Title>
           <Description>
@@ -198,4 +188,7 @@ const AboutSection = () => {
 
               }
 
+<script>
+  AOS.init();
+</script>
 export default AboutSection;
