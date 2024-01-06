@@ -43,7 +43,7 @@ export const Skills = () => {
         <div className="row">
             <div className="col-12">
                 <div className="skill-bx wow zoomIn">
-                    <h2>My Skills</h2>
+                    <h2 className="animation" data-aos = "zoom-in">My Skills</h2>
                     <p>
                         <strong>Programming Skills:</strong> Java<br></br>
                         <strong>Frontend:</strong> HTML5, CSS, React JS<br></br>
@@ -55,7 +55,7 @@ export const Skills = () => {
                     </p>
 
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
+                            <div className="item animation" data-aos = "flip-right">
                                 <img src={meter1} alt="Image" />
                                 <h5>Canva</h5>
                             </div>

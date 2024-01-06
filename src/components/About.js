@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import 'animate.css';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {motion} from 'framer-motion';
 import { keyframes } from 'styled-components';
 import { useState } from 'react';
@@ -8,6 +9,8 @@ import {styled} from 'styled-components';
 import img1 from "../assets/img/2150898633 (1).png";
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 
 const AboutSectionContainer = styled.section`
   color: white;
@@ -139,6 +142,10 @@ const TAB_DATA = [
 const AboutSection = () => {
   const [tab, setTab] = useState('skills');
 
+  useEffect(() => {
+    AOS.init({duration : 2000});
+  }, []);
+
   const handleTabChange = (id) => {
     setTab(id);
   };
@@ -153,10 +160,10 @@ const AboutSection = () => {
   return (
     <AboutSectionContainer id="about">
       <GridContainer className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div>
-        <ImageContainer  data-aos="zoom-out-right">
+        <div className='top'>
+          <div className='animation' data-aos = "zoom-in">
           <img src={img1} alt="About Me" width={500} height={500} />
-        </ImageContainer>
+          </div>
         </div>
         <ContentContainer>
           <Title>About Me</Title>
