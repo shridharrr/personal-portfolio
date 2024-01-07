@@ -6,14 +6,14 @@ import projImg3 from "../assets/img/qqqq.png";
 import projImg11 from "../assets/img/project11.png";
 import projImg12 from "../assets/img/Save money.jpg";
 import projImg13 from "../assets/img/project 4.png";
-
-
+import AOS from 'aos';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { useEffect } from "react";
 
 export const Projects = () => {
-
+  
   const projects = [
     {
       title: "South Wedding Invitation",
@@ -47,6 +47,10 @@ export const Projects = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({duration:1000});
+  }, []);
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -55,7 +59,7 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
+                <h2 className="animation" data-aos = "zoom-in">Projects</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
